@@ -1,5 +1,4 @@
 <?php
-
 class DogProduct extends Product
 {
 
