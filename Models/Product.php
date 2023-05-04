@@ -29,15 +29,3 @@ class Product
         return $this->year;
     }
 }
-
-class DogProduct extends Product
-{
-
-    public $type;
-}
-
-class CatProduct extends Product
-{
-
-    public $type;
-}

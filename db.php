@@ -1,10 +1,15 @@
 <?php
-require_once './Models/Products.php';
 
-$product01 = new Product(new Dog("Adventure", "Drama", "SciFi"), "prodotto1", 25, 2014);
+require_once './Models/Product.php';
+require_once './Models/DogProduct.php';
+require_once './Models/CatProduct.php';
+
+$product01 = new DogProduct("Dog food", 25, 2023, "Food");
+$product02 = new DogProduct("Dog toy", 25, 2023, "Toy");
+$product03 = new CatProduct("Cat food", 25, 2023, "Food");
+$product04 = new CatProduct("Cat toy", 25, 2023, "Toy");
 
 
-
-$movies = [
-    $movie01, $movie02, $movie03, $movie04
+$products = [
+    $product01, $product02, $product03, $product04
 ];
