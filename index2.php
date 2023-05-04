@@ -18,7 +18,7 @@
 
 <body>
     <?php
-    include './db.php';
+    include './db2.php';
     include './Views/partials/header.php';
     ?>
 
@@ -30,9 +30,21 @@
                     <div class="card mb-4">
                         <div class="card-body">
                             <h5 class="card-title"><?= $item->getName(); ?></h5>
-                            <p class="card-text">Type: <?= $item->type; ?></p>
+                            <p class="card-text">Brand: <?= $item->getBrand(); ?></p>
                             <p class="card-text">Price: €<?= $item->getPrice(); ?></p>
-                            <p class="card-text">Year: <?= $item->getYear() ?></p>
+                            <p class="card-text">Icon: <?= $item->getIcon() ?></p>
+
+                            <?php
+                            $class = get_class($item);
+                            if ($class === 'Food') {
+                                echo '<p class="card-text">Weight: ' . $item->getWeight() . 'g</p>';
+                            } elseif ($class === 'Toy') {
+                                echo '<p class="card-text">Material: ' . $item->getMaterial() . '</p>';
+                            } elseif ($class === 'Bed') {
+                                echo '<p class="card-text">Size: ' . $item->getSize() . '</p>';
+                            }
+                            ?>
+
                         </div>
                     </div>
                 </div>
@@ -40,8 +52,6 @@
             }
             ?>
         </div>
-
-        <a href="index2.php">Go to index2.php</a>
     </div>
 
 
