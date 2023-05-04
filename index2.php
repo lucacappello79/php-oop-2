@@ -9,6 +9,9 @@
     <!-- ---BOOTSTRAP---  -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
+    <!-- ---FONTAWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
     <title>PHP OOP2</title>
 </head>
 
@@ -32,7 +35,7 @@
                             <h5 class="card-title"><?= $item->getName(); ?></h5>
                             <p class="card-text">Brand: <?= $item->getBrand(); ?></p>
                             <p class="card-text">Price: €<?= $item->getPrice(); ?></p>
-                            <p class="card-text">Icon: <?= $item->getIcon() ?></p>
+                            <i class="<?= $item->getIcon(); ?> mb-3"></i>
 
                             <?php
                             $class = get_class($item);
@@ -60,7 +63,7 @@
     ?>
 
     <!-- ---BOOTSTRAP -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 
 </html>
