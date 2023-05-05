@@ -40,7 +40,7 @@
                             <?php
                             $class = get_class($item);
                             if ($class === 'Food') {
-                                echo '<p class="card-text">Weight: ' . $item->getWeight() . 'g</p>';
+                                echo '<p class="card-text">Weight: ' . $item->getWeight() . 'gr</p>';
                             } elseif ($class === 'Toy') {
                                 echo '<p class="card-text">Material: ' . $item->getMaterial() . '</p>';
                             } elseif ($class === 'Bed') {

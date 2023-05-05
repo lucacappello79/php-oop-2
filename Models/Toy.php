@@ -1,5 +1,7 @@
 <?php
 
+require_once './traits/TraitExample.php';
+require_once __DIR__ . "/../Traits/Rateable.php";
 class Toy extends Product
 
 {
