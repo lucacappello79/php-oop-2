@@ -35,3 +35,14 @@ $products = [
     $product11,
     $product12,
 ];
+
+foreach ($products as $item) {
+
+    try {
+
+        $item->setSharedProperty('restocking');
+    } catch (Exception $e) {
+
+        echo $e->getMessage(), "<br>";
+    }
+}
