@@ -1,10 +1,13 @@
 <?php
 
-require_once './traits/TraitExample.php';
-require_once __DIR__ . "/../Traits/Rateable.php";
+// require_once './Traits/Traitable.php';
+require_once __DIR__ . "/../Traits/Traitable.php";
 class Toy extends Product
 
 {
+
+    use Traitable;
+
     public $material;
 
     public function __construct(string $brand, string $name, int $price, string $icon, string $category, string $material)

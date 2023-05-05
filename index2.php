@@ -36,6 +36,7 @@
                             <p class="card-text">Brand: <?= $item->getBrand(); ?></p>
                             <p class="card-text">Price: €<?= $item->getPrice(); ?></p>
                             <i class="<?= $item->getIcon(); ?> mb-3"></i>
+                            <p class="card-text">Status: <?= $item->getSharedProperty(); ?></p>
 
                             <?php
                             $class = get_class($item);

@@ -1,15 +1,16 @@
-<?php 
+<?php
 
-    trait TraitExample {
+trait Traitable
+{
 
-        public $sharedProperty;
+    public $sharedProperty = "available";
 
-        public function getSharedProperty() {
-            return $this->sharedProperty;
-        }
-
-        public function setSharedProperty() {
-            return $this->sharedProperty;
-        }
-
+    public function getSharedProperty()
+    {
+        return $this->sharedProperty;
     }
+
+    public function setSharedProperty(string $sharedProperty)
+    {
+    }
+}
