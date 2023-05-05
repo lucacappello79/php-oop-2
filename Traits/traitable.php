@@ -19,7 +19,7 @@ trait Traitable
             $this->sharedProperty = $sharedProperty;
         } else {
 
-            throw new Exception("Invalid value, please us: 'available', 'out of stock'");
+            throw new Exception("Invalid value, please use: 'available', 'out of stock'");
         }
     }
 }

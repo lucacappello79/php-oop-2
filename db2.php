@@ -40,7 +40,9 @@ foreach ($products as $item) {
 
     try {
 
-        $item->setSharedProperty('restocking');
+        // $item->setSharedProperty('restocking');
+
+        $item->setSharedProperty('available');
     } catch (Exception $e) {
 
         echo $e->getMessage(), "<br>";
